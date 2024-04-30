@@ -1,0 +1,28 @@
+@use 'variables' as v ;
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    background-color: v.$azul;
+    width: 100%;
+}
+
+.header {
+    .header-navegacion {
+        a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            list-style: none;
+            text-align: center;
+            margin-top: 10px;
+            justify-content: center;
+            &:hover {
+                color: black;
+                transition-duration: 1s;
+                
+            }
+        }
+    }
+}
+

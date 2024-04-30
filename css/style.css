@@ -1,0 +1,141 @@
+/* Base */
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  background-color: rgb(21, 41, 120);
+  width: 100%;
+}
+
+.header .header-navegacion a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  text-align: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+.header .header-navegacion a:hover {
+  color: black;
+  transition-duration: 1s;
+}
+
+.footer {
+  /*  display: block; */
+  background-color: gray;
+}
+.footer .footer-navegacion a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding-top: 1rem;
+}
+.footer .footer-navegacion a:hover {
+  color: white;
+  transition-duration: 1s;
+}
+.footer p {
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+}
+.redes ul {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+.redes a {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes ul li {
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-navegacion {
+    display: flex;
+  }
+  .footer-navegacion ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 10rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* internas */
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+  }
+  .header .logo {
+    display: hidden;
+  }
+  .header .contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header-navegacion {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .header-navegacion ul {
+    display: flex;
+    gap: 3rem;
+  }
+  .header-navegacion ul a {
+    text-transform: uppercase;
+  }
+  .logo {
+    display: hidden;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .header .logo {
+    display: none;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.imagen-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
